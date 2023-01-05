@@ -1,0 +1,63 @@
+// Copyright 2023, Andreas Halle
+// Lines are ordered by their placement
+// on a 102 key European IBM Model M.
+//
+// Suggested path for this file is ~/.xkb/symbols/hallek
+default partial alphanumeric_keys
+xkb_symbols "hallek" {
+    include "latin(type2)"
+    name[Group1]="Norwegian (Hallek)";
+
+// Row E on ISO/EIC 9995
+    key <TLDE>	{ [       bar,    section,    brokenbar,    paragraph ]	};
+    key <AE05>	{ [         5,    percent,      onehalf,    0x1002030 ]	};
+    key <AE11>	{ [      plus,   question,    plusminus, questiondown ]	};
+    key <AE12>	{ [ backslash, dead_grave,   dead_acute,      notsign ]	};
+
+// Row D on ISO/EIC 9995
+    key <AD01>	{ [        ae,         AE, dead_circumflex, dead_caron]	};
+    key <AD02>	{ [    period,      colon,   ellipsis, periodcentered ]	};
+    key <AD03>  { [         y,          Y,    leftarrow,          yen ] };
+    key <AD04>  { [     aring,  Aring, dead_diaeresis, dead_abovering ] };
+    key <AD05>  { [         w,          W,        U017F,      section ] };
+    key <AD06>  { [         j,          J,    dead_hook,    dead_horn ] };
+    key <AD07>  { [         v,          V,   doublelowquotemark, singlelowquotemark ]   };
+    key <AD08>  { [         d,          D,          eth,          ETH ] };
+    key <AD09>  { [         g,          G,          eng,          ENG ] };
+    key <AD10>  { [         k,          K,          kra,    ampersand ] };
+    key <AD11>	{ [apostrophe,   asterisk, dead_doubleacute, multiply ]	};
+    key <AD12>  { [dead_diaeresis, dead_circumflex, dead_tilde, dead_caron ] };
+
+// Row C on ISO/EIC 9995
+    key <AC01>  { [         a,          A,  ordfeminine,    masculine ] };
+    key <AC02>  { [         i,          I,   rightarrow,     idotless ] };
+    key <AC03>  { [         e,          E,     EuroSign,         cent ] };
+    key <AC04>  { [         o,          O,           oe,           OE ] };
+    key <AC05>  { [         u,          U,    downarrow,      uparrow ] };
+    key <AC06>  { [         l,          L,      lstroke,      Lstroke ] };
+    key <AC07>	{ [         r,          R,   registered,    trademark ]	};
+    key <AC08>  { [         s,          S,       ssharp,        U1E9E ] };
+    key <AC09>  { [         t,          T,        thorn,        THORN ] };
+    key <AC10>  { [         n,          N, rightdoublequotemark, rightsinglequotemark ] };
+    key <AC11>	{ [     minus, underscore,       endash,       emdash ]	};
+    key <AC12>	{ [      less,    greater,      onehalf, threequarters]	};
+
+// Row B on ISO/EIC 9995
+    key <LSGT>  { [         q,          Q,           at,  Greek_OMEGA ] };
+    key <AB01>  { [         z,          Z, guillemotleft,        less ] };
+    key <AB02>  { [     comma,  semicolon, dead_cedilla,  dead_ogonek ] };
+    key <AB03>  { [         c,          C,    copyright,    copyright ] };
+    key <AB04>	{ [    oslash,   Ooblique,   dead_acute, dead_doubleacute ] };
+    key <AB05>  { [         x,          X, guillemotright,    greater ] };
+    key <AB06>  { [         h,          H,      hstroke,      Hstroke ] };
+    key <AB07>  { [         m,          M,           mu,    masculine ] };
+    key <AB08>  { [         f,          F,      dstroke,  ordfeminine ] };
+    key <AB09>  { [         b,          B,  leftdoublequotemark, leftsinglequotemark ] };
+    key <AB10>	{ [         p,          P,     Greek_pi,     Greek_PI ]	};
+
+    include "nbsp(level3n)"
+    include "keypad(ossmath)"
+    include "kpdl(comma)"
+
+    include "level3(ralt_switch)"
+};
